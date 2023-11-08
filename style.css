@@ -370,11 +370,15 @@ body {
 
     #countdown div {
         margin: 0 8px;
-        font-size: 11rem;
+        font-size: 10rem;
     }
 
     #countdown div::before {
         bottom: -6px;
+    }
+
+    .declaration {
+        font-size: 3.4rem;
     }
 }
 
