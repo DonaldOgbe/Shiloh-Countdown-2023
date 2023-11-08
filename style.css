@@ -42,6 +42,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: flex-start;
+    padding-bottom: 15px;
 }
 
 .logo_worldwide_img {
@@ -178,6 +179,11 @@ body {
     #countdown div {
         margin: 0 50px;
     }
+
+    #countdown div::before {
+        font-size: 1.4rem;
+        bottom: -4px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -191,6 +197,11 @@ body {
 
     #countdown div {
         margin: 0 40px;
+    }
+
+    #countdown div::before {
+        font-size: 1.4rem;
+        bottom: -4px;
     }
 }
 
@@ -227,7 +238,12 @@ body {
     }
 
     #countdown div {
-        margin: 0 18px;
+        margin: 0 12px;
+    }
+
+    #countdown div::before {
+        font-size: 1.7rem;
+        bottom: -4px;
     }
 
     .declaration {
@@ -255,8 +271,12 @@ body {
     }
 
     #countdown div {
-        margin: 0 15px;
+        margin: 0 10px;
+    }
 
+    #countdown div::before {
+        font-size: 1.7rem;
+        bottom: -6px;
     }
 }
 
@@ -282,6 +302,11 @@ body {
     #countdown div {
         margin: 0 8px;
 
+    }
+
+    #countdown div::before {
+        font-size: 1.7rem;
+        bottom: -6px;
     }
 }
 
@@ -311,6 +336,11 @@ body {
     #countdown div {
         margin: 0 8px;
 
+    }
+
+    #countdown div::before {
+        font-size: 1.6rem;
+        bottom: -6px;
     }
 }
 
@@ -344,13 +374,19 @@ body {
     }
 
     #countdown div::before {
-        bottom: -5px;
+        bottom: -6px;
     }
 }
 
 @media (max-width: 424px) {
     html {
         font-size: 6px;
+    }
+
+    .logo_worldwide_img {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
     }
 
     .container {
@@ -369,16 +405,17 @@ body {
 
     .png_logo {
         top: 50px;
-        width: 80px;
+        width: 60px;
     }
 
     #countdown div {
-        margin: 0 6px;
-        font-size: 11rem;
+        margin: 0 5.4px;
+        font-size: 10rem;
     }
 
     #countdown div::before {
-        bottom: -5px;
+        bottom: -7px;
+        font-size: 1.3rem;
     }
 
     .declaration {
@@ -386,9 +423,15 @@ body {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 399px) {
     html {
         font-size: 5px;
+    }
+
+    .logo_worldwide_img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
     }
 
     .container {
@@ -397,17 +440,17 @@ body {
 
     .heading {
         padding-top: 50px;
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     .date {
         padding-bottom: 30px;
-        font-size: 3rem;
+        font-size: 3.3rem;
     }
 
     .png_logo {
         top: 50px;
-        width: 80px;
+        width: 50px;
     }
 
     #countdown div {
@@ -416,18 +459,19 @@ body {
     }
 
     #countdown div::before {
-        bottom: -5px;
+        bottom: -8px;
+        font-size: 1.5rem;
     }
 
     .declaration {
-        font-size: 3.4rem;
+        font-size: 3.6rem;
     }
 }
 
 
 @media (max-width: 350px) {
     html {
-        font-size: 4px;
+        font-size: 5px;
     }
 
     .heading {
@@ -456,5 +500,25 @@ body {
 
     .declaration {
         font-size: 3.4rem;
+    }
+}
+
+@media (max-height: 700px) {
+
+    #countdown {
+        margin: 20px 0;
+    }
+
+    .heading {
+        padding-top: 10px;
+    }
+
+    .date {
+        padding: 0;
+    }
+
+    .png_logo {
+        top: 10px;
+        width: 50px;
     }
 }
