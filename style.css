@@ -1,0 +1,460 @@
+@font-face {
+    font-family: "Courgette";
+    src: url("fonts/Courgette-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url("fonts/Heebo-VariableFont_wght.ttf");
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../images/Background Image main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_worldwide_img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.logo_Worldwide_text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 85%;
+    height: 80%;
+    box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/Background Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.9);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.heading {
+    font-family: 'Courgette', cursive;
+    font-size: 3.8rem;
+    padding-bottom: 40px;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 3rem;
+    font-size: 'Heebo', sans-serif;
+    padding-top: 50px;
+    font-weight: 700;
+}
+
+.png_logo {
+    width: 180px;
+    position: absolute;
+    top: 20px;
+    filter: opacity(0.5);
+    z-index: -1;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#countdown div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 80px;
+    font-size: 14rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: -3px -15px 45px rgba(255, 255, 255, 0.719);
+    font-variant: tabular-nums;
+}
+
+#countdown>div::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.13rem;
+    letter-spacing: 3px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+#countdown .days::before {
+    content: "days";
+}
+
+#countdown .hours::before {
+    content: "hours";
+}
+
+#countdown .minutes::before {
+    content: "minutes";
+}
+
+#countdown .seconds::before {
+    content: "seconds";
+}
+
+.declaration {
+    font-family: 'Courgette', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1680px) {
+    html {
+        font-size: 14px;
+    }
+
+    #countdown div {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 13px;
+    }
+
+    .png_logo {
+        width: 150px;
+    }
+
+    #countdown div {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 1224px) {
+    html {
+        font-size: 12px;
+    }
+
+    .png_logo {
+        width: 120px;
+    }
+
+    #countdown div {
+        margin: 0 20px;
+    }
+
+    .declaration {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 11px;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3.4rem;
+    }
+
+    .png_logo {
+        width: 100px;
+    }
+
+    #countdown div {
+        margin: 0 18px;
+    }
+
+    .declaration {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 824px) {
+    html {
+        font-size: 9px;
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 4rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 15px;
+
+    }
+}
+
+@media (max-width: 724px) {
+    html {
+        font-size: 7.5px;
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3.5rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 8px;
+
+    }
+}
+
+@media (max-width: 624px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    .container {
+        height: 75%;
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 8px;
+
+    }
+}
+
+@media (max-width: 524px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    .container {
+        height: 70%;
+    }
+
+    .heading {
+        padding-top: 50px;
+
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 8px;
+        font-size: 11rem;
+    }
+
+    #countdown div::before {
+        bottom: -5px;
+    }
+}
+
+@media (max-width: 424px) {
+    html {
+        font-size: 6px;
+    }
+
+    .container {
+        height: 65%;
+    }
+
+    .heading {
+        padding-top: 50px;
+        font-size: 3rem;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 6px;
+        font-size: 11rem;
+    }
+
+    #countdown div::before {
+        bottom: -5px;
+    }
+
+    .declaration {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 5px;
+    }
+
+    .container {
+        height: 60%;
+    }
+
+    .heading {
+        padding-top: 50px;
+        font-size: 3rem;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 6px;
+        font-size: 11rem;
+    }
+
+    #countdown div::before {
+        bottom: -5px;
+    }
+
+    .declaration {
+        font-size: 3.4rem;
+    }
+}
+
+
+@media (max-width: 350px) {
+    html {
+        font-size: 4px;
+    }
+
+    .heading {
+        padding-top: 50px;
+        font-size: 3rem;
+    }
+
+    .date {
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .png_logo {
+        top: 50px;
+        width: 80px;
+    }
+
+    #countdown div {
+        margin: 0 6px;
+        font-size: 11rem;
+    }
+
+    #countdown div::before {
+        bottom: -5px;
+    }
+
+    .declaration {
+        font-size: 3.4rem;
+    }
+}
