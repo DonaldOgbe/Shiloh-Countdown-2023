@@ -38,7 +38,7 @@ body {
 
 .header {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
@@ -53,14 +53,14 @@ body {
 
 .logo_Worldwide_text {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #fff;
 }
 
 .container {
     position: relative;
-    width: 85%;
+    width: 90%;
     height: 80%;
     box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.3);
@@ -92,26 +92,28 @@ body {
 .text {
     color: #fff;
     text-transform: capitalize;
+    text-shadow: -2px -2px 25px rgba(255, 255, 255, 0.267);
 }
 
 .heading {
     font-family: 'Courgette', cursive;
-    font-size: 3.8rem;
-    padding-bottom: 40px;
+    font-size: 5.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-weight: 700;
 }
 
 .date {
     font-size: 3rem;
     font-size: 'Heebo', sans-serif;
-    padding-top: 50px;
+    padding: 10px 0;
     font-weight: 700;
 }
 
 .png_logo {
     width: 180px;
     position: absolute;
-    top: 20px;
+    top: 50px;
     filter: opacity(0.5);
     z-index: -1;
 }
@@ -121,8 +123,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 #countdown div {
@@ -130,8 +132,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 80px;
-    font-size: 14rem;
+    margin: 0 60px;
+    font-size: 12rem;
     font-weight: 600;
     color: #fff;
     text-shadow: -3px -15px 45px rgba(255, 255, 255, 0.719);
@@ -142,7 +144,7 @@ body {
     content: "";
     position: absolute;
     bottom: 10px;
-    font-size: 1.13rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     line-height: 35px;
     text-transform: uppercase;
@@ -166,416 +168,245 @@ body {
 
 .declaration {
     font-family: 'Courgette', cursive;
-    font-size: 5rem;
+    font-size: 6.3rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding: 0 3px 10px 3px;
 }
 
-@media (max-width: 1680px) {
+
+@media (min-width: 1680px) and (max-width: 1979px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
+}
+
+@media (width < 1824px) {
 
     #countdown div {
         margin: 0 50px;
     }
 
+    .png_logo {
+        top: 60px;
+        width: 150px;
+    }
+
     #countdown div::before {
-        font-size: 1.4rem;
-        bottom: -4px;
+        font-size: 1.55rem;
     }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1679px) {
     html {
-        font-size: 13px;
+        font-size: 11px;
     }
+}
 
-    .png_logo {
-        width: 150px;
-    }
+@media (width < 1580px) {
 
     #countdown div {
         margin: 0 40px;
     }
 
+    .png_logo {
+        top: 70px;
+        width: 130px;
+    }
+
     #countdown div::before {
-        font-size: 1.4rem;
-        bottom: -4px;
+        font-size: 1.6rem;
     }
 }
 
-@media (max-width: 1224px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    #countdown div::before {
+        bottom: 0px;
+    }
+}
+
+
+@media (width < 1366px) {
+
+    #countdown div {
+        margin: 0 35px;
     }
 
     .png_logo {
         width: 120px;
     }
 
-    #countdown div {
-        margin: 0 20px;
+    #countdown div::before {
+        font-size: 1.6rem;
+        bottom: 0px;
     }
 
-    .declaration {
-        font-size: 4.5rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    html {
+        font-size: 9px;
+    }
+
+    .logo_worldwide_img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
     }
 }
 
-@media (max-width: 1024px) {
-    html {
-        font-size: 11px;
+
+@media (width < 1180px) {
+
+    #countdown div {
+        margin: 0 30px;
     }
 
-    .date {
-        padding-bottom: 30px;
-        font-size: 3.4rem;
+    .png_logo {
+        width: 115px;
+    }
+
+    #countdown div::before {
+        font-size: 1.65rem;
+        bottom: -5px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    #countdown div::before {
+        bottom: -10px;
+    }
+
+    .png_logo {
+        top: 50px;
+    }
+}
+
+
+@media (width < 860px) {
+
+    #countdown div {
+        margin: 0 25px;
     }
 
     .png_logo {
         width: 100px;
     }
-
-    #countdown div {
-        margin: 0 12px;
-    }
-
-    #countdown div::before {
-        font-size: 1.7rem;
-        bottom: -4px;
-    }
-
-    .declaration {
-        font-size: 4rem;
-    }
 }
 
-@media (max-width: 824px) {
+
+@media (width < 768px) {
+
     html {
-        font-size: 9px;
+        font-size: 3.5px;
     }
 
-    .heading {
-        padding-top: 50px;
+    #countdown div {
+        margin: 0 15px;
+        font-size: 16rem;
     }
 
     .date {
-        padding-bottom: 30px;
-        font-size: 4rem;
+        font-size: 4.5rem;
+    }
+
+    #countdown div::before {
+        bottom: -15px;
+        font-size: 2.5rem;
     }
 
     .png_logo {
-        top: 50px;
+        top: 55px;
+    }
+
+    .logo_worldwide_img {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .heading,
+    .date,
+    #countdown,
+    .declaration {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413px) {
+
+    html {
+        font-size: 3px;
+    }
+
+    .heading,
+    .date,
+    #countdown,
+    .declaration {
+        margin: 20px 0;
+    }
+
+    .png_logo {
+        top: 52px;
+        width: 90px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+    html {
+        font-size: 2.5px;
+    }
+
+    .heading,
+    .date,
+    #countdown,
+    .declaration {
+        margin: 10px 0;
+    }
+
+    .png_logo {
+        top: 48px;
         width: 80px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 319px) {
+
+    html {
+        font-size: 2.3px;
+    }
+
+    .heading,
+    .date,
+    #countdown,
+    .declaration {
+        margin: 10px 0;
     }
 
     #countdown div {
         margin: 0 10px;
     }
 
-    #countdown div::before {
-        font-size: 1.7rem;
-        bottom: -6px;
-    }
-}
-
-@media (max-width: 724px) {
-    html {
-        font-size: 7.5px;
-    }
-
-    .heading {
-        padding-top: 50px;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3.5rem;
-    }
-
     .png_logo {
-        top: 50px;
+        top: 48px;
         width: 80px;
     }
-
-    #countdown div {
-        margin: 0 8px;
-
-    }
-
-    #countdown div::before {
-        font-size: 1.7rem;
-        bottom: -6px;
-    }
 }
 
-@media (max-width: 624px) {
-    html {
-        font-size: 6.5px;
-    }
-
-    .container {
-        height: 75%;
-    }
-
-    .heading {
-        padding-top: 50px;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 80px;
-    }
-
-    #countdown div {
-        margin: 0 8px;
-
-    }
-
-    #countdown div::before {
-        font-size: 1.6rem;
-        bottom: -6px;
-    }
-}
-
-@media (max-width: 524px) {
-    html {
-        font-size: 6.5px;
-    }
-
-    .container {
-        height: 70%;
-    }
-
-    .heading {
-        padding-top: 50px;
-
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 80px;
-    }
-
-    #countdown div {
-        margin: 0 8px;
-        font-size: 10rem;
-    }
-
-    #countdown div::before {
-        bottom: -6px;
-    }
-
-    .declaration {
-        font-size: 3.4rem;
-    }
-}
-
-@media (max-width: 424px) {
-    html {
-        font-size: 6px;
-    }
-
-    .logo_worldwide_img {
-        width: 50px;
-        height: 50px;
-        margin-right: 12px;
-    }
-
-    .container {
-        height: 65%;
-    }
-
-    .heading {
-        padding-top: 50px;
-        font-size: 3rem;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 60px;
-    }
-
-    #countdown div {
-        margin: 0 5.4px;
-        font-size: 10rem;
-    }
-
-    #countdown div::before {
-        bottom: -7px;
-        font-size: 1.3rem;
-    }
-
-    .declaration {
-        font-size: 3.4rem;
-    }
-}
-
-@media (max-width: 399px) {
-    html {
-        font-size: 5px;
-    }
-
-    .logo_worldwide_img {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-    }
-
-    .container {
-        height: 60%;
-    }
-
-    .heading {
-        padding-top: 50px;
-        font-size: 3.1rem;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3.3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 50px;
-    }
-
-    #countdown div {
-        margin: 0 6px;
-        font-size: 11rem;
-    }
-
-    #countdown div::before {
-        bottom: -8px;
-        font-size: 1.5rem;
-    }
-
-    .declaration {
-        font-size: 3.6rem;
-    }
-}
-
-
-@media (max-width: 350px) {
-    html {
-        font-size: 5px;
-    }
-
-    .heading {
-        padding-top: 50px;
-        font-size: 3rem;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 80px;
-    }
-
-    #countdown div {
-        margin: 0 6px;
-        font-size: 11rem;
-    }
-
-    #countdown div::before {
-        bottom: -5px;
-    }
-
-    .declaration {
-        font-size: 3.4rem;
-    }
-}
-
-@media (max-width: 320px) {
-    html {
-        font-size: 4px;
-    }
-
-    .heading {
-        padding-top: 50px;
-        font-size: 3rem;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 80px;
-    }
-
-    #countdown div {
-        margin: 0 6px;
-        font-size: 11rem;
-    }
-
-    #countdown div::before {
-        bottom: -9px;
-    }
-
-    .declaration {
-        font-size: 3.4rem;
-    }
-}
-
-@media (max-width: 290px) {
-    html {
-        font-size: 4px;
-    }
-
-    .heading {
-        padding-top: 50px;
-        font-size: 3rem;
-    }
-
-    .date {
-        padding-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .png_logo {
-        top: 50px;
-        width: 80px;
-    }
-
-    #countdown div {
-        margin: 0 6px;
-        font-size: 9rem;
-    }
-
-    #countdown div::before {
-        bottom: -9px;
-    }
-
-    .declaration {
-        font-size: 3.4rem;
-    }
-}
-
-@media (max-height: 700px) {
+@media (height < 700px) {
 
     #countdown {
         margin: 20px 0;
@@ -592,5 +423,11 @@ body {
     .png_logo {
         top: 10px;
         width: 50px;
+    }
+}
+
+@media (max-height: 1024px) {
+    #countdown {
+        margin: 20px 0;
     }
 }
